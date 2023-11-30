@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+      <meta charset="UTF-8">
+      <title>電卓</title>
+      <style>
+        table {
+          width: 300px;
+          height: 400px;
+          border-bottom: solid 12px #465e94;
+          border-right: solid 9px #465e94;
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.29);
+          border-radius: 15px;
+          padding: 20px;
+          background-color: rgb(83, 83, 183);
+        }
+        .screen{
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          text-align: right;
+          border: 1px;
+          border-radius: 0px;
+        }
+        ::placeholder{
+          color: black;
+        }
+        td{
+          text-align: center;
+        }
+        input {
+          font-size: x-large;
+          border-radius: 30px;
+          background-color: white;
+          border-bottom: solid 4px #465e94;
+          border-right: solid 3px #465e94;
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.29);
+          padding-left: 15px;
+          padding-right: 15px;
+          padding-top: 7px;
+          padding-bottom: 7px;
+        }
+        </style>
+    </head>
+    <body>
+      <table>
+        <tr>
+          <th colspan="4">
+            <input type="text" placeholder="0" class="screen" name="screen" value="">
+          </th>
+        </tr>
+
+        <tr>
+          <td><input type="button" value="C" onclick="dentakushow(this)"></td>
+          <td></td><td></td>
+          <td><input type="button" name="waru_btn" value="÷" onclick="dentakushow(this)"></td>
+        </tr>
+         
+ 
+        <tr>
+          <td><input type="button" value="7" onclick="dentakushow(this)"></td>
+          <td><input type="button" value="8" onclick="dentakushow(this)"></td>
+          <td><input type="button" value="9" onclick="dentakushow(this)"></td>
+          <td><input type="button" name="kake_btn" value="×" onclick="dentakushow(this)"></td>
+        </tr>
+                
+
+        <tr>
+          <td><input type="button" value="4" onclick="dentakushow(this)"></td>
+          <td><input type="button" value="5" onclick="dentakushow(this)"></td>
+          <td><input type="button" value="6" onclick="dentakushow(this)"></td>
+          <td><input type="button" value="-" onclick="dentakushow(this)"></td>
+        </tr>
+         
+
+        <tr>
+          <td><input type="button" value="1" onclick="dentakushow(this)"></td>
+          <td><input type="button" value="2" onclick="dentakushow(this)"></td>
+          <td><input type="button" value="3" onclick="dentakushow(this)"></td>
+          <td><input type="button" value="+" onclick="dentakushow(this)"></td>
+        </tr>
+
+
+        <tr>
+          <td><input type="button" value="0" onclick="dentakushow(this)"></td>
+          <td></td>
+          <td></td>
+          <td><input type="button" value="=" onclick="dentakushow(this)"></td>
+        </tr>
+         
+      </table>
+      <script src="mission5-1-d.js"></script>
+    </body>
+   
+</html>
